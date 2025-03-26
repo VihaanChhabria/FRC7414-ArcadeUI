@@ -25,7 +25,7 @@ const HomePage = () => {
         }}
       >
         <NavigatorButton text={"About Our Team!"} width={"100%"} height={"33.3%"} pageToGo="/about" />
-        <NavigatorButton text={"View Our Autons!"} width={"100%"} height={"33.3%"}  />
+        <NavigatorButton text={"View Our Autons!"} width={"100%"} height={"33.3%"} pageToGo="/auton" />
         <NavigatorButton text={"Watch Our Video!"} width={"100%"} height={"33.3%"}  />
       </div>
     </div>

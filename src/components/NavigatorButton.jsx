@@ -24,7 +24,7 @@ const NavigatorButton = ({ text, width, height, pageToGo = "/" }) => {
           fontFamily: "PressStart2P-Regular, sans-serif",
           fontSize: "35px",
           textAlign: "center",
-          color: "black",
+          color: "white",
         }}
       >
         {text}

@@ -20,6 +20,7 @@ const AboutPage = () => {
           position: "absolute",
           top: "1%",
           right: "1%",
+          width: "20%"
         }}
       >
         <NavigatorButton text={"Back"} width={"100%"} height={"100%"} pageToGo="/" />
