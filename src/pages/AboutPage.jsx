@@ -23,7 +23,7 @@ const AboutPage = () => {
           width: "20%"
         }}
       >
-        <NavigatorButton text={"Back"} width={"100%"} height={"100%"} pageToGo="/" />
+        <NavigatorButton text={"Back"} width={"100%"} height={"100%"} pageToGo="/" selectorNum={0} />
       </div>
       <div
         style={{

@@ -26,6 +26,7 @@ const AutonPage = () => {
           width={"100%"}
           height={"100%"}
           pageToGo="/"
+          selectorNum={0}
         />
       </div>
 
@@ -45,18 +46,22 @@ const AutonPage = () => {
           width={"100%"}
           height={"33.3%"}
           pageToGo="/auton/processor"
+          selectorNum={1}
         />
         <NavigatorButton
           text={"Non-Processor Side"}
           width={"100%"}
           height={"33.3%"}
           pageToGo="/auton/nonprocessor"
-        /><NavigatorButton
-        text={"Center"}
-        width={"100%"}
-        height={"33.3%"}
-        pageToGo="/auton/center"
-      />
+          selectorNum={2}
+        />
+        <NavigatorButton
+          text={"Center"}
+          width={"100%"}
+          height={"33.3%"}
+          pageToGo="/auton/center"
+          selectorNum={3}
+        />
       </div>
     </div>
   );

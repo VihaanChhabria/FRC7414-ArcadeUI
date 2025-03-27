@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const NavigatorButton = ({ text, width, height, pageToGo = "/" }) => {
+const NavigatorButton = ({ text, width, height, pageToGo = "/", selectorNum}) => {
   const navigate = useNavigate();
 
   return (
@@ -18,6 +18,7 @@ const NavigatorButton = ({ text, width, height, pageToGo = "/" }) => {
         whiteSpace: "pre-wrap",
       }}
       onClick={() => navigate(pageToGo)}
+      className={"selector" + selectorNum}
     >
       <h1
         style={{

@@ -24,9 +24,9 @@ const HomePage = () => {
           gap: "5%"
         }}
       >
-        <NavigatorButton text={"About Our Team!"} width={"100%"} height={"33.3%"} pageToGo="/about" />
-        <NavigatorButton text={"View Our Autons!"} width={"100%"} height={"33.3%"} pageToGo="/auton" />
-        <NavigatorButton text={"Watch Our Video!"} width={"100%"} height={"33.3%"} pageToGo="/video" />
+        <NavigatorButton text={"About Our Team!"} width={"100%"} height={"33.3%"} pageToGo="/about" selectorNum={0} />
+        <NavigatorButton text={"View Our Autons!"} width={"100%"} height={"33.3%"} pageToGo="/auton" selectorNum={1} />
+        <NavigatorButton text={"Watch Our Video!"} width={"100%"} height={"33.3%"} pageToGo="/video" selectorNum={2} />
       </div>
     </div>
   );

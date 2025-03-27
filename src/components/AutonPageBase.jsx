@@ -1,7 +1,7 @@
-import React from 'react'
-import NavigatorButton from './NavigatorButton'
+import React from "react";
+import NavigatorButton from "./NavigatorButton";
 
-const AutonPageBase = ({image}) => {
+const AutonPageBase = ({ image }) => {
   return (
     <div
       style={{
@@ -26,11 +26,12 @@ const AutonPageBase = ({image}) => {
           width={"100%"}
           height={"100%"}
           pageToGo="/auton"
+          selectorNum={0}
         />
       </div>
-      <img src={image} style={{height: "90%"}} />
+      <img src={image} style={{ height: "90%" }} />
     </div>
-  )
-}
+  );
+};
 
-export default AutonPageBase
+export default AutonPageBase;

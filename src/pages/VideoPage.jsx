@@ -27,6 +27,7 @@ const VideoPage = () => {
           width={"100%"}
           height={"100%"}
           pageToGo="/"
+          selectorNum={0}
         />
       </div>
       <video
@@ -35,6 +36,7 @@ const VideoPage = () => {
         width="80%"
         controls
         loop
+        autoPlay
       />
     </div>
   )
