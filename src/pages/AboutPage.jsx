@@ -20,10 +20,16 @@ const AboutPage = () => {
           position: "absolute",
           top: "1%",
           right: "1%",
-          width: "20%"
+          width: "20%",
         }}
       >
-        <NavigatorButton text={"Back"} width={"100%"} height={"100%"} pageToGo="/" selectorNum={0} />
+        <NavigatorButton
+          text={"Back"}
+          width={"100%"}
+          height={"100%"}
+          pageToGo="/"
+          selectorNum={0}
+        />
       </div>
       <div
         style={{
@@ -54,6 +60,7 @@ const AboutPage = () => {
             margin: 0,
             padding: 0,
             display: "block",
+            filter: "drop-shadow(0px 1.5vw 1.5vw rgba(255, 255, 255, 0.3))",
           }}
         />
       </div>

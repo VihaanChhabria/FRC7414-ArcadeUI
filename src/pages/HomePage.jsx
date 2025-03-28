@@ -14,14 +14,20 @@ const HomePage = () => {
         gap: "5%",
       }}
     >
-      <img src={TeamLogo} style={{width: "30%"}} />
+      <img
+        src={TeamLogo}
+        style={{
+          width: "30%",
+          filter: "drop-shadow(0px 1.5vw 1.5vw rgba(255, 255, 255, 0.3))",
+        }}
+      />
       <div
         style={{
           width: "50%",
           height: "80%",
           display: "flex",
           flexDirection: "column",
-          gap: "5%"
+          gap: "5%",
         }}
       >
         <NavigatorButton text={"About Our Team!"} width={"100%"} height={"33.3%"} pageToGo="/about" selectorNum={0} />

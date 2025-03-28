@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const NavigatorButton = ({ text, width, height, pageToGo = "/", selectorNum}) => {
+const NavigatorButton = ({ text, width, height, pageToGo = "/", selectorNum }) => {
   const navigate = useNavigate();
 
   return (
@@ -11,11 +11,16 @@ const NavigatorButton = ({ text, width, height, pageToGo = "/", selectorNum}) =>
         height: `calc(${height} - 1.5vw)`,
         backgroundColor: "#FF7700",
         border: "0.75vw solid #D35400",
-        borderRadius: "30px",
+        boxShadow: `
+          inset 0 0.25vw 1vw rgba(0, 0, 0, 0.5), 
+          0 0.5vw 1vw rgba(0, 0, 0, 0.5),
+          0 0 1vw 0.5vw rgba(255, 119, 0, 0.4)`, /* Glowing effect */
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         whiteSpace: "pre-wrap",
+        borderRadius: "10px", /* Rounded corners */
+        imageRendering: "pixelated", /* Pixelated effect */
       }}
       onClick={() => navigate(pageToGo)}
       className={"selector" + selectorNum}
@@ -26,6 +31,7 @@ const NavigatorButton = ({ text, width, height, pageToGo = "/", selectorNum}) =>
           fontSize: "35px",
           textAlign: "center",
           color: "white",
+          textShadow: "0.2vw 0.2vw 0 rgba(0, 0, 0, 0.7)",
         }}
       >
         {text}
