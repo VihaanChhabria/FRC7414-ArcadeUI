@@ -13,7 +13,6 @@ body,
     url(./assets/PressStart2P-Regular.TTF) format("truetype");
 }
 
-
 .scanlines {
   overflow: hidden;
   position: relative;
@@ -41,9 +40,9 @@ body,
   left: 0;
   z-index: 2147483648;
   background: linear-gradient(
-      to bottom,
-      transparent 50%,
-      rgba(0, 0, 0, 0.3) 51%
+    to bottom,
+    transparent 50%,
+    rgba(0, 0, 0, 0.3) 51%
   );
   background-size: 100% 4.5px;
   animation: scanlines 1s steps(60) infinite;
@@ -52,12 +51,12 @@ body,
 /* ANIMATE UNIQUE SCANLINE */
 @keyframes scanline {
   0% {
-      transform: translate3d(0, 200000%, 0);
+    transform: translate3d(0, 200000%, 0);
   }
 }
 @keyframes scanlines {
   0% {
-      background-position: 0 50%;
+    background-position: 0 50%;
   }
 }
 div {
@@ -70,4 +69,227 @@ div.scanlines {
 body {
   position: relative;
   background: #1b1b1b;
+}
+.selector0,
+.selector0--wrapper,
+.selector1,
+.selector1--wrapper,
+.selector2,
+.selector2--wrapper,
+.selector3,
+.selector3--wrapper {
+  clip-path: polygon(
+    0px calc(100% - 24px),
+    4px calc(100% - 24px),
+    4px calc(100% - 16px),
+    8px calc(100% - 16px),
+    8px calc(100% - 12px),
+    12px calc(100% - 12px),
+    12px calc(100% - 8px),
+    16px calc(100% - 8px),
+    16px calc(100% - 4px),
+    24px calc(100% - 4px),
+    24px 100%,
+    calc(100% - 24px) 100%,
+    calc(100% - 24px) calc(100% - 4px),
+    calc(100% - 16px) calc(100% - 4px),
+    calc(100% - 16px) calc(100% - 8px),
+    calc(100% - 12px) calc(100% - 8px),
+    calc(100% - 12px) calc(100% - 12px),
+    calc(100% - 8px) calc(100% - 12px),
+    calc(100% - 8px) calc(100% - 16px),
+    calc(100% - 4px) calc(100% - 16px),
+    calc(100% - 4px) calc(100% - 24px),
+    100% calc(100% - 24px),
+    100% 24px,
+    calc(100% - 4px) 24px,
+    calc(100% - 4px) 16px,
+    calc(100% - 8px) 16px,
+    calc(100% - 8px) 12px,
+    calc(100% - 12px) 12px,
+    calc(100% - 12px) 8px,
+    calc(100% - 16px) 8px,
+    calc(100% - 16px) 4px,
+    calc(100% - 24px) 4px,
+    calc(100% - 24px) 0px,
+    24px 0px,
+    24px 4px,
+    16px 4px,
+    16px 8px,
+    12px 8px,
+    12px 12px,
+    8px 12px,
+    8px 16px,
+    4px 16px,
+    4px 24px,
+    0px 24px
+  );
+  position: relative;
+}
+.selector0,
+.selector1,
+.selector2,
+.selector3 {
+  border: 8px solid transparent;
+}
+.selector0--wrapper,
+.selector1--wrapper,
+.selector2--wrapper,
+.selector3--wrapper {
+  width: fit-content;
+  height: fit-content;
+}
+.selector0--wrapper .selector0,
+.selector1--wrapper .selector1,
+.selector2--wrapper .selector2,
+.selector3--wrapper .selector3 {
+  display: block;
+  clip-path: polygon(
+    8px 28px,
+    12px 28px,
+    12px 20px,
+    16px 20px,
+    16px 16px,
+    20px 16px,
+    20px 12px,
+    28px 12px,
+    28px 8px,
+    calc(100% - 28px) 8px,
+    calc(100% - 28px) 12px,
+    calc(100% - 20px) 12px,
+    calc(100% - 20px) 16px,
+    calc(100% - 16px) 16px,
+    calc(100% - 16px) 20px,
+    calc(100% - 12px) 20px,
+    calc(100% - 12px) 28px,
+    calc(100% - 8px) 28px,
+    calc(100% - 8px) calc(100% - 28px),
+    calc(100% - 12px) calc(100% - 28px),
+    calc(100% - 12px) calc(100% - 20px),
+    calc(100% - 16px) calc(100% - 20px),
+    calc(100% - 16px) calc(100% - 16px),
+    calc(100% - 20px) calc(100% - 16px),
+    calc(100% - 20px) calc(100% - 12px),
+    calc(100% - 28px) calc(100% - 12px),
+    calc(100% - 28px) calc(100% - 8px),
+    28px calc(100% - 8px),
+    28px calc(100% - 12px),
+    20px calc(100% - 12px),
+    20px calc(100% - 16px),
+    16px calc(100% - 16px),
+    16px calc(100% - 20px),
+    12px calc(100% - 20px),
+    12px calc(100% - 28px),
+    8px calc(100% - 28px)
+  );
+}
+.selector0::after,
+.selector0--wrapper::after,
+.selector1::after,
+.selector1--wrapper::after,
+.selector2::after,
+.selector2--wrapper::after,
+.selector3::after,
+.selector3--wrapper::after {
+  content: "";
+  position: absolute;
+  clip-path: polygon(
+    0px calc(100% - 24px),
+    4px calc(100% - 24px),
+    4px calc(100% - 16px),
+    8px calc(100% - 16px),
+    8px calc(100% - 12px),
+    12px calc(100% - 12px),
+    12px calc(100% - 8px),
+    16px calc(100% - 8px),
+    16px calc(100% - 4px),
+    24px calc(100% - 4px),
+    24px 100%,
+    calc(100% - 24px) 100%,
+    calc(100% - 24px) calc(100% - 4px),
+    calc(100% - 16px) calc(100% - 4px),
+    calc(100% - 16px) calc(100% - 8px),
+    calc(100% - 12px) calc(100% - 8px),
+    calc(100% - 12px) calc(100% - 12px),
+    calc(100% - 8px) calc(100% - 12px),
+    calc(100% - 8px) calc(100% - 16px),
+    calc(100% - 4px) calc(100% - 16px),
+    calc(100% - 4px) calc(100% - 24px),
+    100% calc(100% - 24px),
+    100% 24px,
+    calc(100% - 4px) 24px,
+    calc(100% - 4px) 16px,
+    calc(100% - 8px) 16px,
+    calc(100% - 8px) 12px,
+    calc(100% - 12px) 12px,
+    calc(100% - 12px) 8px,
+    calc(100% - 16px) 8px,
+    calc(100% - 16px) 4px,
+    calc(100% - 24px) 4px,
+    calc(100% - 24px) 0px,
+    24px 0px,
+    24px 4px,
+    16px 4px,
+    16px 8px,
+    12px 8px,
+    12px 12px,
+    8px 12px,
+    8px 16px,
+    4px 16px,
+    4px 24px,
+    0px 24px,
+    0px 50%,
+    8px 50%,
+    8px 28px,
+    12px 28px,
+    12px 20px,
+    16px 20px,
+    16px 16px,
+    20px 16px,
+    20px 12px,
+    28px 12px,
+    28px 8px,
+    calc(100% - 28px) 8px,
+    calc(100% - 28px) 12px,
+    calc(100% - 20px) 12px,
+    calc(100% - 20px) 16px,
+    calc(100% - 16px) 16px,
+    calc(100% - 16px) 20px,
+    calc(100% - 12px) 20px,
+    calc(100% - 12px) 28px,
+    calc(100% - 8px) 28px,
+    calc(100% - 8px) calc(100% - 28px),
+    calc(100% - 12px) calc(100% - 28px),
+    calc(100% - 12px) calc(100% - 20px),
+    calc(100% - 16px) calc(100% - 20px),
+    calc(100% - 16px) calc(100% - 16px),
+    calc(100% - 20px) calc(100% - 16px),
+    calc(100% - 20px) calc(100% - 12px),
+    calc(100% - 28px) calc(100% - 12px),
+    calc(100% - 28px) calc(100% - 8px),
+    28px calc(100% - 8px),
+    28px calc(100% - 12px),
+    20px calc(100% - 12px),
+    20px calc(100% - 16px),
+    16px calc(100% - 16px),
+    16px calc(100% - 20px),
+    12px calc(100% - 20px),
+    12px calc(100% - 28px),
+    8px calc(100% - 28px),
+    8px 50%,
+    0px 50%
+  );
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #d35400;
+  display: block;
+  pointer-events: none;
+}
+.selector0::after,
+.selector1::after,
+.selector2::after,
+.selector3::after {
+  margin: -8px;
 }

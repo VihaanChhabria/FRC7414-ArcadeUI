@@ -48,7 +48,7 @@ const MainLayout = () => {
   }, [counter]);
 
   return (
-    <div key={pageKey} style={{ width: "100%", height: "100%" }} class={"scanlines"}>
+    <div key={pageKey} style={{ width: "100%", height: "100%" }} className={"scanlines"}>
       <style>
         {`
           @keyframes blink {

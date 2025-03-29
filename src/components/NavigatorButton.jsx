@@ -1,7 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const NavigatorButton = ({ text, width, height, pageToGo = "/", selectorNum }) => {
+const NavigatorButton = ({
+  text,
+  width,
+  height,
+  pageToGo = "/",
+  selectorNum,
+}) => {
   const navigate = useNavigate();
 
   return (
@@ -10,20 +16,20 @@ const NavigatorButton = ({ text, width, height, pageToGo = "/", selectorNum }) =
         width: `calc(${width} - 1.5vw)`,
         height: `calc(${height} - 1.5vw)`,
         backgroundColor: "#FF7700",
-        border: "0.75vw solid #D35400",
+        border: "1.25vw solid #D35400",
         boxShadow: `
           inset 0 0.25vw 1vw rgba(0, 0, 0, 0.5), 
           0 0.5vw 1vw rgba(0, 0, 0, 0.5),
-          0 0 1vw 0.5vw rgba(255, 119, 0, 0.4)`, /* Glowing effect */
+          0 0 1vw 0.5vw rgba(255, 119, 0, 0.4)` /* Glowing effect */,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         whiteSpace: "pre-wrap",
-        borderRadius: "10px", /* Rounded corners */
-        imageRendering: "pixelated", /* Pixelated effect */
       }}
       onClick={() => navigate(pageToGo)}
+      // className="pixel-corners"
       className={"selector" + selectorNum}
+
     >
       <h1
         style={{
