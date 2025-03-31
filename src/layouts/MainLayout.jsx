@@ -27,14 +27,14 @@ const MainLayout = () => {
           (prev) => (prev - 1 + allSelectors.length) % allSelectors.length
         );
         audioSelectRef.current.pause();
-        audioEnterRef.current.currentTime = 0;
+        audioSelectRef.current.currentTime = 0;
         audioEnterRef.current.pause();
         audioEnterRef.current.currentTime = 0;
         audioSelectRef.current.play();
       } else if (event.key === "ArrowRight" || event.key === "ArrowDown") {
         setCounter((prev) => (prev + 1) % allSelectors.length);
         audioSelectRef.current.pause();
-        audioEnterRef.current.currentTime = 0;
+        audioSelectRef.current.currentTime = 0;
         audioEnterRef.current.pause();
         audioEnterRef.current.currentTime = 0;
         audioSelectRef.current.play();
@@ -44,11 +44,11 @@ const MainLayout = () => {
           currentElement.click();
           setTimeout(() => {
             audioSelectRef.current.pause();
-            audioEnterRef.current.currentTime = 0;
+            audioSelectRef.current.currentTime = 0;
             audioEnterRef.current.pause();
             audioEnterRef.current.currentTime = 0;
             audioEnterRef.current.play();
-          }, 10); // 2-second delay
+          }, 10);
         }
       }
     };
