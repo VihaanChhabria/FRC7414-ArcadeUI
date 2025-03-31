@@ -11,53 +11,38 @@ const MainLayout = () => {
 
   const audioSelectRef = useRef(null);
   const audioEnterRef = useRef(null);
+  const counterRef = useRef(counter);
 
   useEffect(() => {
-    setPageKey(location.pathname);
-    setCounter(0);
-  }, [location]);
-
+    counterRef.current = counter;
+  }, [counter]);
+  
   useEffect(() => {
     const handleKeyDown = (event) => {
       const allSelectors = document.querySelectorAll('[class^="selector"]');
-      const maxIndex = allSelectors.length - 1;
-
+      if (!allSelectors.length) return;
+  
       if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
-        setCounter(
-          (prev) => (prev - 1 + allSelectors.length) % allSelectors.length
-        );
-        audioSelectRef.current.pause();
-        audioSelectRef.current.currentTime = 0;
-        audioEnterRef.current.pause();
-        audioEnterRef.current.currentTime = 0;
+        setCounter((prev) => (prev - 1 + allSelectors.length) % allSelectors.length);
         audioSelectRef.current.play();
       } else if (event.key === "ArrowRight" || event.key === "ArrowDown") {
         setCounter((prev) => (prev + 1) % allSelectors.length);
-        audioSelectRef.current.pause();
-        audioSelectRef.current.currentTime = 0;
-        audioEnterRef.current.pause();
-        audioEnterRef.current.currentTime = 0;
         audioSelectRef.current.play();
-      } else {
-        const currentElement = document.querySelector(`.selector${counter}`);
+      } else if (event.key === "Enter") {
+        const currentElement = allSelectors[counterRef.current];
         if (currentElement) {
           currentElement.click();
           setTimeout(() => {
-            audioSelectRef.current.pause();
-            audioSelectRef.current.currentTime = 0;
-            audioEnterRef.current.pause();
-            audioEnterRef.current.currentTime = 0;
             audioEnterRef.current.play();
           }, 10);
         }
       }
     };
-
+  
     window.addEventListener("keydown", handleKeyDown);
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-    };
+    return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
+  
 
   useEffect(() => {
     const allSelectors = document.querySelectorAll('[class^="selector"]');
