@@ -29,7 +29,6 @@ const NavigatorButton = ({
       onClick={() => navigate(pageToGo)}
       // className="pixel-corners"
       className={"selector" + selectorNum}
-
     >
       <h1
         style={{

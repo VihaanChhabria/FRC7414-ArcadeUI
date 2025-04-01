@@ -60,7 +60,7 @@ const AboutPage = () => {
             margin: 0,
             padding: 0,
             display: "block",
-            filter: "drop-shadow(0px 1.5vw 1.5vw rgba(255, 255, 255, 0.3))",
+            filter: "drop-shadow(0px 2vw 2vw rgba(255, 255, 255, 0.35))",
           }}
         />
       </div>

@@ -18,7 +18,7 @@ const HomePage = () => {
         src={TeamLogo}
         style={{
           width: "30%",
-          filter: "drop-shadow(0px 1.5vw 1.5vw rgba(255, 255, 255, 0.3))",
+          filter: "drop-shadow(0px 2vw 2vw rgba(255, 255, 255, 0.35))",
         }}
       />
       <div
