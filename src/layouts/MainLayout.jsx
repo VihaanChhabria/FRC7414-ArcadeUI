@@ -28,7 +28,7 @@ const MainLayout = () => {
       } else if (event.key === "ArrowRight" || event.key === "ArrowDown") {
         setCounter((prev) => (prev + 1) % allSelectors.length);
         audioSelectRef.current.play();
-      } else if (event.key === "Enter") {
+      } else {
         const currentElement = allSelectors[counterRef.current];
         if (currentElement) {
           currentElement.click();
